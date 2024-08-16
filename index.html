@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Encryptor and the Decryptor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="./assets/image/titulologo.png"
+    />
+  </head>
+  <body>
+    <main class="conteudo">
+      <div class="conteudo_imagem">
+        <img
+          id="logo_image"
+          src="./assets/image/logo.png"
+          alt="triangulo doido"
+        />
+      </div>
+      <section class="conteudo_texto">
+        <textarea
+          class="text-area"
+          placeholder="Digite seu texto aqui"
+        ></textarea>
+        <span class="conteudo_texto_mini"
+          >Apenas letras minúsculas e sem acento.</span
+        >
+        <div class="conteudo_botao">
+          <button class="botao botao-primario" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+          <button class="botao botao-secundario" onclick="btnDesencriptar()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <div class="conteudo_resultado">
+        <span class="texto_codificado_decodificado"></span>
+        <div class="mensagem-sem-texto">
+          <img
+            class="conteudo_resultado_imagem"
+            src="./assets/image/mabel.png"
+            alt="mabellinda"
+          />
+
+          <span class="conteudo_mensagem">Nenhuma mensagem até agora</span>
+          <span class="conteudo_mensagem_2"
+            >Digite um texto que você deseja <br />
+            criptografrar ou Descriptografar.</span
+          >
+        </div>
+        <button class="botao botao_copiar" onclick="copiarTexto()">
+          COPIAR
+        </button>
+      </div>
+    </main>
+    <footer class="rodape">
+      <img class="rodape_imagem" src="./assets/image/rodape.png" alt="" />
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
